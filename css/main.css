@@ -96,7 +96,7 @@ header {
     justify-content: center;
     text-align: center;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .top-text-inner {
     position: absolute;

@@ -56,7 +56,7 @@
     font-weight: bold;
 }
 
-/*  カテゴリー別の写真（右側） */
+/*  カテゴリー別の写真4枚（右側） */
 .personal-info-right {
     width: 55%;
 }
@@ -69,7 +69,7 @@
     grid-template-columns: 50% 50%;
 }
 
-/*  Study  */
+/*  １枚ずつの設定  */
 .personal-right-item {
     position: relative;
     cursor: pointer;
@@ -77,14 +77,15 @@
 }
 .category-img {
     width: 100%;
-    height: 240px;
+    height: 220px;
 }
 .personal-right-item:hover .category-detail {
     width: 100%;
 }
 .category-img img {
     width: 100%;
-    height: 240px;
+    height: 220px;
+    object-fit: cover;
     display: block;
     margin: 0 auto;
 }
@@ -108,7 +109,7 @@
     color: #fff;
     font-size: 14px;
     line-height: 1.8;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 /* hover for category-detail  */
