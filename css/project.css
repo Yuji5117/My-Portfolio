@@ -1,0 +1,129 @@
+/* Projects */
+.project {
+    padding-top: 100px;
+    height: auto;
+}
+
+/* projects box */
+.project-items {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.project-item {
+    margin-bottom: 20px;
+}
+.project-img img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    transition: .5s;
+    cursor: pointer;
+}
+.project-img img:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: 0 7px 10px rgba(0,0,0,0.4);
+}
+.project-content {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+.project-content-title {
+    padding: 30px;
+}
+
+
+/* MODAL */
+/* modal for project item */
+/* modalのbg */
+.project-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: none
+}
+.project-modal-content {
+    width: 90%;
+    padding: 40px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+/*  close btn  */
+.fa-times-circle {
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: .3s;
+}
+.fa-times-circle:hover {
+    color: rgb(53,129,159);
+}
+
+/*  modalの詳細（白い部分）  */
+.project-detail {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%; 
+}
+
+/*  modal　左側  */
+.pj-dsc-title {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 16px;
+}
+.project-detail-description {
+    padding: 0 10px;
+}
+.pj-dsc-box {
+    padding-bottom: 10px;
+}
+.pj-dsc-content {
+    line-height: 2;
+}
+
+/*  modal　右側  */
+.project-detail-pic {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+.pj-multipic-box {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.pj-multipic img {
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+.pj-main {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+.pj-main a img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* modal for project item */

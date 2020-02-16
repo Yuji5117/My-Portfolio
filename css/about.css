@@ -1,0 +1,117 @@
+
+/* About */
+.about {
+    width: 100%;
+    height: 100vh;
+}
+.about-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+/*  自己紹介（左側）  */
+.personal-info-box {
+    width: 45%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* プロフィール画像　*/
+.personal-info-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.personal-info-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid rgb(44,62,80);;
+    border-radius: 50%;
+}
+
+/*  自己紹介の内容リスト　*/
+.personal-info-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.personal-info-content-list li {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*  紹介文  */
+.personal-info-content-bottom {
+    padding: 30px 15px;
+    grid-column: 1/3;
+}
+.personal-bottom-description {
+    font-size: 18px;
+    line-height: 2em;
+}
+.personal-bottom-description span {
+    font-weight: bold;
+}
+
+/*  カテゴリー別の写真（右側） */
+.personal-info-right {
+    width: 55%;
+}
+.personal-info-right-inner {
+    width: 90%;
+    margin: 0 auto;
+}
+.personal-right-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*  Study  */
+.personal-right-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.category-img {
+    width: 100%;
+    height: 240px;
+}
+.personal-right-item:hover .category-detail {
+    width: 100%;
+}
+.category-img img {
+    width: 100%;
+    height: 240px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*  hoverするとき表示される（左から滑らかに表示）  */
+.category-detail {
+    width: 100%;
+    height: 100%;
+    padding: 20px 15px;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: rgba(103, 58, 183, 0.71);
+    transition: .7s ease;
+}
+.category-detail h3 {
+    color: white;
+    font-size: 50px;
+}
+.category-detail p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.8;
+    padding-top: 40px;
+}
+
+/* hover for category-detail  */
+.personal-right-item:hover .category-detail {
+    left: 0%;
+}

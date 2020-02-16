@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>仲村祐二　Profile Site</title>
+    <script src="https://kit.fontawesome.com/461c67f52d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-container">
+            <div class="header-inner">
+                <div class="title">
+                    <h2><a href="#top-page">Yuji's Portfolio</a></h2>
+                </div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="nav-items">
+                            <li><a href="#top-page">Top</a></li>
+                            <li><a href="#about-page">About</a></li>
+                            <li><a href="#skill-page">Skill</a></li>
+                            <li><a href="#project-page">Projects</a></li>
+                            <li><a href="#contact-page">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+        
+    <section>
+        <!-- Top -->
+        <div id="top-page" class="top">
+            <div class="top-text">
+                <div class="top-text-inner">
+                    <h1 class="top-title">Yuji Nakamura's<br>Portfolio</h1>
+                    <h2 class="top-subtitle">Web Developer</h2>
+                </div>
+            </div>
+            <div class="top-img-mask">
+                <img src="img/top.JPG" alt="">
+            </div>
+        </div>
+    
+        <!-- about section -->
+        <div id="about-page" class="about header-fixed" >
+            <h2 class="main-title">About Me</h2>
+            <div class="about-inner" 
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+
+                <!-- 自己紹介（左側） -->
+                <div class="personal-info-box">
+                    <!-- プロフィール画像 -->
+                    <div class="personal-info-img">
+                        <img src="img/profile.JPG" alt="プロフィール画像">
+                    </div>
+                    <!-- 自己紹介の内容リスト -->
+                    <div class="personal-info-content">
+                        <ul class="personal-info-content-list">
+                            <li>名前：仲村　祐二<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yuji Nakamura</li>
+                            <li>出身：大阪（現在は東京在住）</li>
+                            <li>学歴：関西外国語大学<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;外国語学部英米語学科</li>
+                            <li>外国語：英語・スペイン語</li>
+                            <li>生年月日：1995/05/10</li>
+                        </ul>
+                    </div>
+                    <!-- 紹介文 -->
+                    <div class="personal-info-content-bottom">
+                        <p class="personal-bottom-description">昔から何事にも興味を示し、実際に行動し挑戦する性格です。<br>
+                            自分のアイデアを形にして世の中の仕組みを改善し、楽しい未来を作りたいと強く思い、
+                            <span>【躍動感あるエンジニア】</span>を目指し日々奮闘しています。</p>
+                    </div>
+                </div>
+
+                <!-- カテゴリー別の写真（右側） -->
+                <div class="personal-info-right">
+                    <div class="personal-info-right-inner">
+                        <div class="personal-right-box">
+                            <!-- Study -->
+                            <div class="personal-right-item" data-target="personal-modal1">
+                                <div class="category-img">
+                                    <img src="img/study.jpg" alt="study画像">
+                                </div>
+                                <!-- hoverするとき表示される -->
+                                <div class="category-detail">
+                                    <h3>Study</h3>
+                                    <p>Python、Django等を利用したアプリ開発を行い日々自己研鑽しています。他の言語や技術にも興味があり、AWSとJavaScriptも勉強しています。</p>
+                                </div>
+                            </div>
+                            <!-- Vision -->
+                            <div class="personal-right-item" data-target="personal-modal2">
+                                <div class="category-img">
+                                    <img src="img/vision.JPG" alt="vision画像">
+                                </div>
+                                <!-- hoverするとき表示される -->
+                                <div class="category-detail">
+                                    <h3>Vision</h3>
+                                    <p>国を問わず誰もが人生を楽しめる豊かな世界を創りたい。
+                                        その為に、自己研鑽を怠らず、常に新しいことに挑戦し、全力で取り組む。
+                                        </p>
+                                </div>
+                            </div>
+                            <!-- Like -->
+                            <div class="personal-right-item" data-target="personal-modal3">
+                                <div class="category-img">
+                                    <img src="img/like.jpg" alt="Like画像">
+                                </div>
+                                <!-- hoverするとき表示される -->
+                                <div class="category-detail">
+                                    <h3>Like</h3>
+                                    <p>バックパッキング、釣り、サッカー、<br>プログラミング、外国語学習、<br>ラテンミュージック</p>
+                                </div>
+                            </div>
+                            <!-- Interest -->
+                            <div class="personal-right-item" data-target="personal-modal4">
+                                <div class="category-img">
+                                    <img src="img/interesting.jpg" alt="Interest画像">
+                                </div>
+                                <div class="category-detail">
+                                    <h3>Interest</h3>
+                                    <p>React.js、Vue.js、PHP、Ruby、機械学習<br>
+                                        ヨガ、キックボクシング
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- skill section -->
+        <div id="skill-page" class="skill header-fixed" >
+            <div class="skill-inner">
+                <h1 class="main-title color-white">Skill</h1>
+                <p class="skill-subtitle">以下の言語やツールを勉強しながら、ポートフォリオを作成しております。</p>
+
+                <!-- Skill ボックス -->
+                <div class="skill-box" data-aos="fade-left"
+                data-aos-offset="300"data-aos-easing="ease-in-sine">
+                    <div class="skill-item">
+                        <img id='skill-detail-click' class="skill-item-img" src="img/python.svg" alt="Pythonアイコン">
+                        <p class="skill-name">Python</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-item-img" src="img/django.svg" alt="Djangoアイコン">
+                        <p class="skill-name">Django</p>
+                    </div>
+                    <div class="skill-item">
+                        <img  class="skill-item-img" src="img/html-5.svg" alt="HTMLアイコン">
+                        <p class="skill-name">HTML</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-item-img" src="img/css-3.svg" alt="CSSアイコン">
+                        <p class="skill-name">CSS</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-item-img" src="img/javascript.svg" alt="JavaScriptアイコン">
+                        <p class="skill-name">JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-item-img" src="img/aws.svg" alt="AWSアイコン">
+                        <p class="skill-name">AWS</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-item-img" src="img/heroku-icon.svg" alt="Herokuアイコン">
+                        <p class="skill-name">Heroku</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-item-img" src="img/mysql.svg" alt="MySQLアイコン">
+                        <p class="skill-name">MySQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-item-img" src="img/git-icon.svg" alt="Gitアイコン">
+                        <p class="skill-name">Git</p>
+                    </div>
+                    <div class="skill-item">
+                        <img class="skill-item-img" src="img/github-icon.svg" alt="GitHubアイコン">
+                        <p class="skill-name">GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects section -->
+        <div id="project-page" class="project header-fixed">
+
+            <h1 class="main-title">Projects</h1>
+            <div class="project-items">
+                <!-- Project Awesomemory -->
+                <div class="project-item" data-aos="zoom-in" 
+                data-aos-offset="300" data-aos-easing="ease">
+                    <div class="project-img">
+                        <img class="project-click-modal" data-target="project-modal1" src="img/awesomemory.png" alt="Project画像">
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-content-title">Awesomemory</h4>
+                    </div>
+                </div>
+                <!-- Project Portfolio Site -->
+                <div class="project-item" data-aos="zoom-in" 
+                data-aos-offset="300" data-aos-easing="ease">
+                    <div  class="project-img">
+                        <img class="project-click-modal" data-target="project-modal2" src="img/toppic.JPG" alt="Project画像">
+                    </div>
+                    <div class="project-content">
+                        <h4 class="project-content-title">Portforlio Site</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal for project -->
+            <!-- project modal1 -->
+            <div id="project-modal1" class="project-modal">
+                <div class="project-modal-content">
+                    <!-- close btn -->
+                    <button id="close-project-modal" class="project-close">
+                        <i class="far fa-times-circle"></i>
+                    </button>
+
+                    <div class="project-detail">
+                        <!-- modal　左側 -->
+                        <div class="project-detail-description">
+                            <div class="pj-dsc-box">
+                                <h3 class="pj-dsc-title">Awesomemory</h3>
+                                <p class="pj-dsc-content">
+                                    初めて作成したオリジナルWebアプリケーションです。旅や日常生活の思い出を
+                                    写真アルバムとして保管でき、いつでも思い出を振り返れる物を作りたい思い作成しました。<br>
+                                    このwebアプリを作成するにあたりユーザー登録、CRUD、imageファイルの扱い方、サーチ機能、
+                                    ページネーションなどの基礎的な部分を学ぶ事が出来ました。
+                                    写真を複数アップロードする機能を実装するのに苦戦しましたが、formsetを利用して一括で
+                                    複数アップロードできるようにしました。<br>
+                                    今後は、学んだ技術を応用したアプリの開発や、AWSなどの実務に使える技術を学ぶことを考えています。
+                                    </p>
+                                <a href="">GitHub</a><br>
+                                <a href="">Demo</a>
+                            </div>
+                            <div class="pj-dsc-tequnique">
+                                <h3 class="pj-dsc-title">言語や技術</h3>
+                                <p class="pj-dsc-content">Django / HTML / CSS / Bootstrap / Sqlite（開発) / Postgresql（本番） / Heroku / S3(AWS) /</p>
+                            </div>
+                        </div>
+
+                        <!-- modal　右側 -->
+                        <div class="project-detail-pic">
+                            <div class="pj-multipic-box">
+                                <div class="pj-multipic">
+                                    <img class="select-pic1" src="img/awesomemory.png" alt="awesomemory画像">
+                                </div>
+                                <div class="pj-multipic">
+                                    <img class="select-pic1" src="img/login.png" alt="login画像">
+                                </div>
+                                <div class="pj-multipic">
+                                    <img class="select-pic1" src="img/signup.png" alt="signup画像">
+                                </div>
+                                <div class="pj-multipic">
+                                    <img class="select-pic1" src="img/memory.png" alt="memory画像">
+                                </div>
+                                <div class="pj-multipic">
+                                    <img class="select-pic1" src="img/memories.png" alt="memories画像">
+                                </div>
+                                <div class="pj-multipic">
+                                    <img class="select-pic1" src="img/schedule.png" alt="schedule画像">
+                                </div>
+                            </div>
+                            <div class="pj-main">
+                                <a href="https://awesomemory.herokuapp.com/"><img id="pj-main-img" src="img/awesomemory.png" alt="メイン画像"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- project modal2 -->
+            <div id="project-modal2" class="project-modal">
+                <div class="project-modal-content">
+                    <!-- close btn -->
+                    <button id="close-project-modal" class="project-close">
+                        <i class="far fa-times-circle"></i>
+                    </button>
+
+                    <div class="project-detail">
+
+                        <!-- modal　左側 -->
+                        <div class="project-detail-description">
+                            <div class="pj-dsc-content">
+                                <h3 class="pj-dsc-title">Yuji's Portfolio</h3>
+                                <p class="pj-dsc-content">
+                                    現在のWebページです。
+                                    自己紹介ふまえたポートフォリオサイトが欲しいと思い、HTMLとCSS、
+                                    jQueryを使用し1枚のLPを作成しました。<br>Aboutセクションの画像にマウスオーバーすると
+                                    詳細の情報が表示される機能を実装しました。<br>
+                                    jQueryを使用して、Projectセクションの画像をクリックすると、詳細画面が表示される機能を実装。。
+                                    詳細画面の小さい画像をクリックするとメインの画像が切り替わる機能も実装しました。<br>
+                                    勉強も踏まえ、よりよいポートフォリオサイトにする為、技術を学びながら改良していきます。
+                                    </p>
+                                <a href="">GitHub</a><br>
+                                <a href="">Demo</a>
+                            </div>
+                            <div class="pj-dsc-tequnique">
+                                <h3 class="pj-dsc-title">言語や技術</h3>
+                                <p class="pj-dsc-content">HTML/CSS, jQuery, AOS, Git, GitHub</p>
+                            </div>
+                        </div>
+
+                        <!-- modal 右側 -->
+                        <div class="project-detail-pic">
+                            <div class="pj-multipic-box">
+                                <div class="pj-multipic">
+                                    <img class="select-pic2" src="img/awesomemory.png" alt="awesomemory画像">
+                                </div>
+                                <div class="pj-multipic">
+                                    <img class="select-pic2" src="img/login.png" alt="login画像">
+                                </div>
+                                <div class="pj-multipic">
+                                    <img class="select-pic2" src="img/signup.png" alt="signup画像">
+                                </div>
+                                <div class="pj-multipic">
+                                    <img class="select-pic2" src="img/memory.png" alt="memory画像">
+                                </div>
+                                <div class="pj-multipic">
+                                    <img class="select-pic2" src="img/memories.png" alt="memories画像">
+                                </div>
+                                <div class="pj-multipic">
+                                    <img class="select-pic2" src="img/schedule.png" alt="schedule画像">
+                                </div>
+                            </div>
+                            <div class="pj-main">
+                                <a href="https://awesomemory.herokuapp.com/"><img id="pj-main-img2" src="img/awesomemory.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>  
+
+        <!-- contact section -->
+        <div id="contact-page" class="contact">
+            <h1 class="main-title color-white">Contact</h1>
+            <div class="contact-content" data-aos="fade-up" 
+            data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <p class="contact-text color-white">
+                    興味を持って頂けましたら、メールもしくはDM(Twitter)でご連絡お願いします。<br>
+                    また、感想や気になることがあればご連絡下さい。お待ちしております。</p>
+                <!-- アイコンリスト -->
+                <div class="contact-icon">
+                    <ul class="icon-items">
+                        <li><a href="mailto:ny5117@icloud.com"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/Yuji5117?tab=repositories"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <small>Copyright © Yuji Nakamura 2020</small>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
