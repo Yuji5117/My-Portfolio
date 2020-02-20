@@ -29,5 +29,16 @@ $(function() {
     });
     /* modal for project item */
 
+    // scroll position // 
+    var scrollPosition;
+    $('.project-click-modal').on('click', function() {
+        scrollPosition = $(window).scrollTop();
+        $('body').addClass('fixed').css({'top': -scrollPosition});
+    });
+    $('.close-project-modal').on('click', function() {
+        $('body').removeClass('fixed').css({'top': 0});
+        window.scrollTo( 0 , scrollPosition );
+    });
+
 });
 // jQuery //

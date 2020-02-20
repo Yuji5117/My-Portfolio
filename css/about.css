@@ -116,3 +116,54 @@
 .personal-right-item:hover .category-detail {
     left: 0%;
 }
+
+/* Responsive for about page  */
+@media screen and (max-width: 480px) {
+    .about {
+        height: 100%;
+    }
+    .about-inner {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  自己紹介（左側）  */
+    .personal-info-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* プロフィール画像　*/
+    .personal-info-img img {
+        width: 190px;
+        height: 190px;
+    }
+
+    /*  自己紹介の内容リスト　*/
+    .personal-info-content-list li {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .personal-bottom-description {
+        font-size: 14px;
+    }
+
+    /*  カテゴリー別の写真4枚（右側） */
+    .personal-info-right {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .personal-info-right-inner {
+        width: 100%;
+    }
+    .personal-right-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  １枚ずつの設定  */
+
+}

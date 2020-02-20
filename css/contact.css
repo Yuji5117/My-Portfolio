@@ -39,3 +39,13 @@
     background-color: #fff;
 }
 /* CONTACT section */
+
+
+/* Responsive for  */
+
+@media screen and (max-width: 480px) {
+    .contact-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

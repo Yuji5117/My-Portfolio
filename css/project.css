@@ -139,4 +139,52 @@
 
 /* Responsive for  */
 
-@media screen and (max-width: 480px)
+@media screen and (max-width: 480px) {
+    .project-items {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* MODAL */
+    .project-modal-content {
+        width: 90%;
+        height: 90%;
+        padding-top: 15px; 
+        padding-bottom: 40px;
+        overflow-y: scroll;
+    }
+    
+    /*  modalの詳細（白い部分）  */
+    .project-detail {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  modal　description  */
+    .pj-dsc-title {
+        font-size: 20px;
+        padding-bottom: 18px;
+    }
+    .pj-tequnique-title {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+    .project-detail-description {
+        padding: 0;
+    }
+    .pj-dsc-content {
+        font-size: 14px;
+    }
+
+    /* modal picture */
+    .project-detail-pic {
+        padding: 0 40px;
+        margin-top: 40px;
+    }
+    .project-detail-pic {
+        padding: 0;
+    }
+}
