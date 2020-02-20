@@ -116,6 +116,9 @@ footer small {
         height: 48px;
         position: fixed;
     }
+    .header-container {
+        width: 90%;
+    }
     .header-nav {
         display: none;
     }
