@@ -18,10 +18,7 @@ li {
 
 /* モーダルopen時に背景をスクロールできないようにする為。 */
 body.fixed {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
+    overflow: hidden;
 }
 
 
@@ -62,7 +59,6 @@ header {
 .title h2 {
     font-size: 34px;
     line-height: 80px;
-    color: #fff;
 }
 .title h2 a {
     color: #fff;
@@ -87,48 +83,10 @@ header {
     color: rgb(44,62,80);
     background-color: #fff;
 }
+.menu-bar {
+    display: none;
+}
 /* header　終わり */
-
-
-/* TOP */
-.top {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}   
-.top-text {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.top-text-inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-.top-title {
-    font-size: 68px;
-    color: #fff;
-}
-.top-subtitle {
-    font-size: 28px;
-    color: #fff;
-}
-.top-img-mask img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-/* TOP */
 
 
 /* FOOTER */
@@ -146,28 +104,72 @@ footer small {
 
 /* Responsive for  */
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 860px) {
+    /*  ヘッダー固定した部分の調整  */
+    .header-fixed {
+        margin-top: -48px;
+        padding-top: 48px;
+    }
+
     header {
         width: 100%;
         height: 48px;
         position: fixed;
     }
-    .header-container {
+    .header-nav {
         display: none;
+    }
+
+    .title h2 {
+        font-size: 26px;
+        line-height: 48px;
     }
     
     /*  ヘッダーのnavバー  */
     .header-nav {
         display: none;
-
     }
 
-    /* Top */
-    .top-text-inner {
-        top: 40%;
+    /* menu-bar */
+    .menu-bar {
+        display: block;
     }
-    .top-title {
-        font-size: 56px;
+    .menu-check-btn {
+        font-size: 2em;
+        color: #fff;
+        position: absolute;
+        top: 2px;
+        right: 20px;
+        line-height: 48px;
+        display: block;
+        cursor: pointer;
+    }
+
+    /* for jQuery */
+    .menu-bar .menu-lists-active {
+        left: 0;
+    }
+
+    .menu-lists {
+        padding-top: 30px;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 48px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+    }
+    .menu-lists li {
+        margin-top: 30px;
+    }
+    .menu-lists li a {
+        color: #fff;
+        font-size: 1.8em;
+    }
+    .menu-lists li a:hover, .menu-lists li a:active {
+        color: teal;
     }
 }
 
