@@ -52,8 +52,13 @@
     .icon-items .far, .fab {
         padding: 15px;
         font-size: 2em;
-        pointer-events: none;
     }
-
+    /*  アイコンhover時に色が変わる  */
+    .icon-items .far:hover, .fab:hover {
+        font-size: 2em;
+        opacity: 0.8;
+        color: rgb(53,129,159);
+        background-color: #fff;
+    }
 
 }
